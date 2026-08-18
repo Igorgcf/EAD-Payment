@@ -107,7 +107,8 @@ Body: empty
 ```
 #### User Controller (API Rest):
 * The API provides the following endpoints:
-*GET USERS**
+
+**GET USERS**
 
 ```markdown
 GET /ead-payment/users - Retrieve a pagination of all users (Endpoint exclusive to administrators).
@@ -168,17 +169,16 @@ GET /ead-payment/users/{id} -  Retrieve a single payment by id.
 
 This application uses [H2 Data base](https://www.h2database.com/html/quickstart.html) as the default database.
 
-To perform the unit and integration tests of the application, the H2 database must be used.
-
 ## Technologies Used
 
 - Java version 17
 - Spring Boot
 - Maven
 - H2 database
+- RabbitMQ
+- Plataforma Stripe
 - IntelliJ IDEA
 - Postman
----
 
 > ## ⚠️ Atenção
 > Conforme a arquitetura do projeto evoluiu e amadureceu, foi necessário criar uma nova branch principal chamada `main-v2`.
