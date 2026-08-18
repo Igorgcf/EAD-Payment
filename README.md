@@ -99,7 +99,7 @@ GET /ead-payment/users/{userId}/payments/{paymentId} - Retrieve a single payment
 
 **DELETE PAYMENTS**
 ```markdown
-DELETE /ead-payment/users/{userid}/payments/{paymentId} - Delete a payment by id.
+DELETE /ead-payment/users/{userId}/payments/{paymentId} - Delete a payment by id.
 
 Return HTTP status: 204 No Content
 Body: empty
