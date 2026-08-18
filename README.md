@@ -65,22 +65,15 @@ GET /ead-payment/users/{userId}/payments - Retrieve a pagination of all payments
 ```json
 "content": [
         {
-            "id": "8380b83a-f08f-4977-adf1-650b7682fed8",
-            "username": "BrunoSilva",
-            "email": "bruno@gmail.com.br",
-            "fullName": "Bruno Silva Ferreira Melo",
-            "phoneNumber": "+55 11 91009-0807",
-            "cpf": "123-321-144-7",
-            "userStatus": "ACTIVE",
-            "userType": "STUDENT",
-            "creationDate": "2025-01-07T00:35:02Z",
-            "lastUpdateDate": "2025-01-07T00:35:02Z",
-            "links": [
-                {
-                    "rel": "self",
-                    "href": "http://localhost:8087/users/8380b83a-f08f-4977-adf1-650b7682fed8"
-                }
-            ]
+            "id": "3fc957bb-a76a-458c-b4fa-89b34946bf74",
+            "paymentControl": "EFFECTED",
+            "paymentRequestDate": "2026-08-18T19:01:16Z",
+            "paymentCompletionDate": "2026-08-18T19:01:18Z",
+            "paymentExpirationDate": "2026-09-17T19:01:16Z",
+            "lastDigitsCreditCard": "4444",
+            "valuePaid": 77.77,
+            "paymentMessage": "Payment effected successfully - payment intent Id: pi_3U5sGTDDQ2Tbmtuv066dwXLI",
+            "recurrence": false
         }
     ]
 ```
@@ -92,16 +85,24 @@ GET /ead-payment/users/{userId}/payments/{paymentId} - Retrieve a single payment
 
 ```json
 {
-    
+    "id": "3fc957bb-a76a-458c-b4fa-89b34946bf74",
+    "paymentControl": "EFFECTED",
+    "paymentRequestDate": "2026-08-18T19:01:16Z",
+    "paymentCompletionDate": "2026-08-18T19:01:18Z",
+    "paymentExpirationDate": "2026-09-17T19:01:16Z",
+    "lastDigitsCreditCard": "4444",
+    "valuePaid": 77.77,
+    "paymentMessage": "Payment effected successfully - payment intent Id: pi_3U5sGTDDQ2Tbmtuv066dwXLI",
+    "recurrence": false
 }
 ```
 
 **DELETE PAYMENTS**
 ```markdown
-DELETE /ead-payment/users/{userid}/payments/{paymentId} - Delete a user by id.
+DELETE /ead-payment/users/{userid}/payments/{paymentId} - Delete a payment by id.
 
-Return HTTP status: 200 OK
-Body: "Payment deleted successfully!"
+Return HTTP status: 204 No Content
+Body: empty
 
 ```
 #### User Controller (API Rest):
