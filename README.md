@@ -110,41 +110,59 @@ The API provides the following endpoints:
 *GET USERS**
 
 ```markdown
-GET /ead-payment/users - Retrieve a pagination of all payments (Endpoint exclusive to administrators).
+GET /ead-payment/users - Retrieve a pagination of all users (Endpoint exclusive to administrators).
 ```
 ```json
-"content": [
+{
+    "content": [
         {
-            "id": "8380b83a-f08f-4977-adf1-650b7682fed8",
-            "username": "BrunoSilva",
-            "email": "bruno@gmail.com.br",
-            "fullName": "Bruno Silva Ferreira Melo",
-            "phoneNumber": "+55 11 91009-0807",
-            "cpf": "123-321-144-7",
+            "id": "75b42b83-9878-4a77-9a04-774ca10dec67",
+            "username": "andressa",
+            "email": "andressa@gmail.com.br",
+            "fullName": "Andressa Lima",
             "userStatus": "ACTIVE",
             "userType": "STUDENT",
-            "creationDate": "2025-01-07T00:35:02Z",
-            "lastUpdateDate": "2025-01-07T00:35:02Z",
-            "links": [
-                {
-                    "rel": "self",
-                    "href": "http://localhost:8087/users/8380b83a-f08f-4977-adf1-650b7682fed8"
-                }
-            ]
+            "phoneNumber": "+55 11 91009-0806",
+            "cpf": "606.394.863-55",
+            "paymentStatus": "PAYING",
+            "paymentExpirationDate": "2026-09-17T19:01:18Z",
+            "firstPaymentDate": "2026-08-18T19:01:18Z",
+            "lastPaymentDate": "2026-08-18T19:01:18Z"
+        },
+        {
+            "id": "254bf827-307d-45a4-a7c6-d51ae7eba64e",
+            "username": "anderson",
+            "email": "anderson@gmail.com.br",
+            "fullName": "Anderson Andrade",
+            "userStatus": "ACTIVE",
+            "userType": "ADMIN",
+            "phoneNumber": "+55 11 77777-7777",
+            "cpf": "994.999.678-34",
+            "paymentStatus": "NOTSTARTED"
         }
     ]
+}
 ```
 **GET USERS/ID**
 ```markdown
 GET /ead-payment/users/{id} -  Retrieve a single payment by id.
 ```
-
 ```json
 {
-    
+    "id": "75b42b83-9878-4a77-9a04-774ca10dec67",
+    "username": "andressa",
+    "email": "andressa@gmail.com.br",
+    "fullName": "Andressa Lima",
+    "userStatus": "ACTIVE",
+    "userType": "STUDENT",
+    "phoneNumber": "+55 11 91009-0806",
+    "cpf": "606.394.863-55",
+    "paymentStatus": "PAYING",
+    "paymentExpirationDate": "2026-09-17T19:01:18Z",
+    "firstPaymentDate": "2026-08-18T19:01:18Z",
+    "lastPaymentDate": "2026-08-18T19:01:18Z"
 }
 ```
-
 
 ## Database
 
