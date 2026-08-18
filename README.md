@@ -34,11 +34,11 @@ git clone https://github.com/Igorgcf/EAD-Payment.git
 3. Attention!!! To carry out unit and integration tests of the application, the H2 database must be used.
 
 ## API Endpoints
+
+#### Payment Controller (API Rest):
 The API provides the following endpoints:
 
--- Payment Controller (API Rest):
-
-**POST /ead-payment/users/{userId}/payments **
+< POST /ead-payment/users/{userId}/payments >
 ```markdown
 POST /ead-payment/users/{userId}/payments **
 ```
@@ -104,6 +104,46 @@ Return HTTP status: 200 OK
 Body: "Payment deleted successfully!"
 
 ```
+#### User Controller (API Rest):
+The API provides the following endpoints:
+*GET USERS**
+
+```markdown
+GET /ead-payment/users - Retrieve a pagination of all payments (Endpoint exclusive to administrators).
+```
+```json
+"content": [
+        {
+            "id": "8380b83a-f08f-4977-adf1-650b7682fed8",
+            "username": "BrunoSilva",
+            "email": "bruno@gmail.com.br",
+            "fullName": "Bruno Silva Ferreira Melo",
+            "phoneNumber": "+55 11 91009-0807",
+            "cpf": "123-321-144-7",
+            "userStatus": "ACTIVE",
+            "userType": "STUDENT",
+            "creationDate": "2025-01-07T00:35:02Z",
+            "lastUpdateDate": "2025-01-07T00:35:02Z",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://localhost:8087/users/8380b83a-f08f-4977-adf1-650b7682fed8"
+                }
+            ]
+        }
+    ]
+```
+**GET USERS/ID**
+```markdown
+GET /ead-payment/users/{id} -  Retrieve a single payment by id.
+```
+
+```json
+{
+    
+}
+```
+
 
 ## Database
 
