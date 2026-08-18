@@ -8,6 +8,8 @@ O microservice é responsável pelo gerenciamento de solicitações de pagamento
 
 Além da API REST, o serviço utiliza RabbitMQ para comunicação assíncrona por meio de Consumers e Publishers, JWT para autenticação e autorização, Spring Data JPA para persistência e integração com H2 data base.
 
+O microservice também se conecta com a plataforma [Stripe](https://stripe.com/br) através de suas API's para realizar o fluxo de pagamentos 
+
 ## Table of Contents
 
 - [Installation](#installation)
