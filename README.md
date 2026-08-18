@@ -36,7 +36,7 @@ git clone https://github.com/Igorgcf/EAD-Payment.git
 ## API Endpoints
 
 #### Payment Controller (API Rest):
-The API provides the following endpoints:
+* The API provides the following endpoints:
 
 < POST /ead-payment/users/{userId}/payments >
 ```markdown
@@ -106,7 +106,7 @@ Body: empty
 
 ```
 #### User Controller (API Rest):
-The API provides the following endpoints:
+* The API provides the following endpoints:
 *GET USERS**
 
 ```markdown
