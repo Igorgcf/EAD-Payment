@@ -183,12 +183,12 @@ This application uses [H2 Data base](https://www.h2database.com/html/quickstart.
 - IntelliJ IDEA
 - Postman
 
-> ## ⚠️ Atenção
+## ⚠️ Atenção
 > Conforme a arquitetura do projeto evoluiu e amadureceu, foi necessário criar uma nova branch principal chamada `main-v2`.
 >
 > Para garantir o funcionamento completo e eficiente da arquitetura, os microservices `Authuser` e `Course` devem ser executados utilizando a branch `main-v2`.
 >
-> ## Microservices da Arquitetura
+## Microservices da Arquitetura
 
 Para o funcionamento completo da arquitetura em ambiente local, todos os microservices do ecossistema devem estar em execução utilizando o profile ativo `dev`.
 
@@ -205,7 +205,7 @@ Os microservices que compõem a arquitetura são:
 
 > ℹ️ Certifique-se de executar todos os serviços com o profile `dev` ativo para garantir a comunicação correta entre os microservices durante o desenvolvimento local.
 >
-> ## Contributing
+## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
 
